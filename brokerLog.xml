@@ -1,0 +1,1610 @@
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+   <!--Begin Of FlipKart LogAppender Info-->
+   <appender name="MP_FK_Sterling_Notification_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_FK_Sterling_Notification_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_FK_Sterling_Notification_MF_ref"/>
+   </logger>
+   <appender name="MP_Sterling_FK_GetOrderShipments_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_FK_GetOrderShipments_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_FK_GetOrderShipments_MF_ref"/>
+   </logger>
+   <appender name="MP_Sterling_FK_DispatchOrders_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_FK_DispatchOrders_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_FK_DispatchOrders_MF_ref"/>
+   </logger>
+   <appender name="MP_Sterling_FK_GetShippingLabel_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_FK_GetShippingLabel_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_FK_GetShippingLabel_MF_ref"/>
+   </logger>
+   <appender name="MP_Sterling_FK_GetManifest_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_FK_GetManifest_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_FK_GetManifest_MF_ref"/>
+   </logger>
+   <appender name="MP_Sterling_FK_GetInvoice_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_FK_GetInvoice_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_FK_GetInvoice_MF_ref"/>
+   </logger>
+   <appender name="MP_Sterling_FK_PostBulkListing_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_FK_PostBulkListing_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_FK_PostBulkListing_MF_ref"/>
+   </logger>
+   <appender name="MP_Sterling_FK_PostCancelOrders_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_FK_PostCancelOrders_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_FK_PostCancelOrders_MF_ref"/>
+   </logger>
+   <appender name="MP_Sterling_FK_PostOrdersLabels_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_FK_PostOrdersLabels_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_FK_PostOrdersLabels_MF_ref"/>
+   </logger>
+   <appender name="MP_Sterling_FK_GetOrders_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_FK_GetOrders_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_FK_GetOrders_MF_ref"/>
+   </logger>
+   <!--End Of FlipKart LogAppender Info-->
+   
+   <!-- Begin Of SAP LogAppender Info -->
+
+	<appender name="SAP_MaterialFeed_Batch_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+	</appender>
+
+	<logger name="SAP_MaterialFeed_Batch_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="SAP_MaterialFeed_Batch_MF_ref"/>
+	</logger>
+	
+	<appender name="OMS_SAP_SalesPosting_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+         </layout>		
+</appender>
+
+	<logger name="OMS_SAP_SalesPosting_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="OMS_SAP_SalesPosting_MF_ref"/>
+	</logger>
+	
+	
+	<appender name="OMS_SAP_SalesReturnPosting_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+         </layout>		
+</appender>
+
+	<logger name="OMS_SAP_SalesReturnPosting_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="OMS_SAP_SalesReturnPosting_MF_ref"/>
+	</logger>
+	
+	
+		<appender name="Titan_Sterling_Symphony_StockPosting_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+         </layout>		
+</appender>
+
+	<logger name="Titan_Sterling_Symphony_StockPosting_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="Titan_Sterling_Symphony_StockPosting_MF_ref"/>
+	</logger>
+
+	
+			<appender name="Titan_Sterling_Symphony_OrdersDemandPosting_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+         </layout>		
+</appender>
+
+	<logger name="Titan_Sterling_Symphony_OrdersDemandPosting_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="Titan_Sterling_Symphony_OrdersDemandPosting_MF_ref"/>
+	</logger>
+	
+	<appender name="SAP_OMS_MaterialFeed_MF_ref" class="org.apache.log4j.RollingFileAppender">
+		<param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+        <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+        </layout>
+	</appender>
+
+	<logger name="SAP_OMS_MaterialFeed_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="SAP_OMS_MaterialFeed_MF_ref"/>
+	</logger>
+
+	<appender name="SAP_OMS_PriceFeed_MF_ref" class="org.apache.log4j.RollingFileAppender">
+		<param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+        <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+        </layout>
+	</appender>
+
+	<logger name="SAP_OMS_PriceFeed_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="SAP_OMS_PriceFeed_MF_ref"/>
+	</logger>
+
+	<appender name="SAP_OMS_StockTransferMemo_MF_ref" class="org.apache.log4j.RollingFileAppender">
+		<param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+        <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+        </layout>
+	</appender>
+
+	<logger name="SAP_OMS_StockTransferMemo_MF" additivity="true">
+			<level value="INFO"/>
+			<appender-ref ref="SAP_OMS_StockTransferMemo_MF_ref"/>
+	</logger>		
+
+	<appender name="SAP_PriceFeed_Batch_MF_ref" class="org.apache.log4j.RollingFileAppender">
+		<param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+        <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+        </layout>
+	</appender>
+
+	<logger name="SAP_PriceFeed_Batch_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="SAP_PriceFeed_Batch_MF_ref"/>
+	</logger>
+
+	<appender name="SAP_StockTransferMemo_Batch_MF_ref" class="org.apache.log4j.RollingFileAppender">
+		<param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+        <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+          <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+        </layout>
+	</appender>
+
+	<logger name="SAP_StockTransferMemo_Batch_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="SAP_StockTransferMemo_Batch_MF_ref"/>
+	</logger>		
+
+
+<appender name="WMS_SAP_ReceiptConfirmation_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+		<param name="file" value="/app/iib/logs/eCommerce_IIB.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="ConversionPattern"  value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t]%n %-1m%n" />
+         </layout>		
+</appender>
+
+	<logger name="WMS_SAP_ReceiptConfirmation_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="WMS_SAP_ReceiptConfirmation_MF_ref"/>
+	</logger>
+
+	<appender name="OMS_SAP_AdvanceReceipt_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+		<param name="file" value="/app/iib/logs/eCommerce_IIB.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="ConversionPattern"  value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t]%n %-1m%n" />
+         </layout>		
+</appender>
+
+	<logger name="OMS_SAP_AdvanceReceipt_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="OMS_SAP_AdvanceReceipt_MF_ref"/>
+	</logger>
+
+<appender name="OMS_SAP_AdvanceCancel_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+		<param name="file" value="/app/iib/logs/eCommerce_IIB.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="ConversionPattern"  value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t]%n %-1m%n" />
+         </layout>		
+</appender>
+
+	<logger name="OMS_SAP_AdvanceCancel_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="OMS_SAP_AdvanceCancel_MF_ref"/>
+	</logger>
+
+
+
+<appender name="WMS_SAP_InventoryAdjustments_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+		<param name="file" value="/app/iib/logs/eCommerce_IIB.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="ConversionPattern"  value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t]%n %-1m%n" />
+         </layout>		
+</appender>
+
+	<logger name="WMS_SAP_InventoryAdjustments_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="WMS_SAP_InventoryAdjustments_MF_ref"/>
+	</logger> 
+
+<!-- End Of SAP LogAppender Info -->
+
+<!-- Begin of RTV LogAppender Info -->	
+	
+	<appender name="RTV_OMS_SAP_STMReturns_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+		<param name="file" value="/app/iib/logs/eCommerce_IIB.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="ConversionPattern"  value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t]%n %-1m%n" />
+         </layout>		
+</appender>
+
+	<logger name="RTV_OMS_SAP_STMReturns_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="RTV_OMS_SAP_STMReturns_MF_ref"/>
+	</logger>
+	
+	<appender name="SAP_STM_RTV_Batch_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+		<param name="file" value="/app/iib/logs/eCommerce_IIB.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="ConversionPattern"  value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t]%n %-1m%n" />
+         </layout>		
+</appender>
+
+	<logger name="SAP_STM_RTV_Batch_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="SAP_STM_RTV_Batch_MF_ref"/>
+	</logger>
+	
+	<appender name="SAP_STM_RTV_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+		<param name="file" value="/app/iib/logs/eCommerce_IIB.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="ConversionPattern"  value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t]%n %-1m%n" />
+         </layout>		
+</appender>
+
+	<logger name="SAP_STM_RTV_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="SAP_STM_RTV_MF_ref"/>
+	</logger>
+<!-- End Of RTV LogAppender Info -->
+
+ <!--Begin Of IMC LogAppender Info-->
+	<appender name="OMS_IMC_EmailTransactions_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+		<param name="file" value="/app/iib/logs/eCommerce_IIB.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="ConversionPattern"  value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t]%n %-1m%n" />
+         </layout>		
+</appender>
+
+	<logger name="OMS_IMC_EmailTransactions_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="OMS_IMC_EmailTransactions_MF_ref"/>
+	</logger>
+
+	<appender name="OMS_IMC_SMSTransactions_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+		<param name="file" value="/app/iib/logs/eCommerce_IIB.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="ConversionPattern"  value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t]%n %-1m%n" />
+         </layout>		
+</appender>
+
+	<logger name="OMS_IMC_SMSTransactions_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="OMS_IMC_SMSTransactions_MF_ref"/>
+	</logger>
+  
+<!-- End Of IMC LogAppender Info -->  
+
+<!-- Begin of Payment Gateways LogAppender Info -->	
+	<appender name="PaymentGateways_Sterling_BillDesk_Refund_MF_ref" class="org.apache.log4j.RollingFileAppender">
+	    <param name="append" value="true"/>
+        <param name="maxFileSize" value="50MB"/>
+        <param name="maxBackupIndex" value="100"/>
+        <param name="immediateFlush" value="true"/>
+		<param name="file" value="/app/iib/logs/eCommerce_IIB.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+		  <param name="ConversionPattern"  value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t]%n %-1m%n" />
+         </layout>		
+</appender>
+
+	<logger name="PaymentGateways_Sterling_BillDesk_Refund_MF" additivity="true">
+		<level value="INFO"/>
+		<appender-ref ref="PaymentGateways_Sterling_BillDesk_Refund_MF_ref"/>
+	</logger>
+	
+	<appender name="PaymentGateways_Sterling_CCAvenue_Refund_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="PaymentGateways_Sterling_CCAvenue_Refund_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="PaymentGateways_Sterling_CCAvenue_Refund_MF_ref"/>
+   </logger>
+	
+	 <appender name="PaymentGateways_Sterling_Mobikwik_Refund_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="PaymentGateways_Sterling_Mobikwik_Refund_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="PaymentGateways_Sterling_Mobikwik_Refund_MF_ref"/>
+   </logger>
+   
+      <appender name="PaymentGateways_Sterling_PayTM_Refund_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="PaymentGateways_Sterling_PayTM_Refund_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="PaymentGateways_Sterling_PayTM_Refund_MF_ref"/>
+   </logger>
+   
+      <appender name="PaymentGateways_Sterling_PayU_Refund_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   
+   <logger name="PaymentGateways_Sterling_PayU_Refund_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="PaymentGateways_Sterling_PayU_Refund_MF_ref"/>
+   </logger>
+   
+   <appender name="PaymentGateways_Sterling_PayUWallet_RefundPayment_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+</appender>
+<logger name="PaymentGateways_Sterling_PayUWallet_RefundPayment_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="PaymentGateways_Sterling_PayUWallet_RefundPayment_MF_ref"/>
+</logger>
+
+<!-- End Of Payment gateways LogAppender Info -->
+
+<!--Begin Of Payment Gateways Passthrough LogAppender Info-->
+<appender name="PaymentGateways_Sterling_CCAvenue_Refund_passthrough_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="PaymentGateways_Sterling_CCAvenue_Refund_passthrough_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="PaymentGateways_Sterling_CCAvenue_Refund_passthrough_MF_ref"/>
+   </logger>
+   
+   <appender name="PaymentGateways_Sterling_PayU_Refund_PassThrough_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   
+   <logger name="PaymentGateways_Sterling_PayU_Refund_PassThrough_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="PaymentGateways_Sterling_PayU_Refund_PassThrough_MF_ref"/>
+   </logger>  
+   
+      <appender name="PaymentGateways_Sterling_PayUWallet_PassThrough_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   
+   <logger name="PaymentGateways_Sterling_PayUWallet_PassThrough" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="PaymentGateways_Sterling_PayUWallet_PassThrough_ref"/>
+   </logger>
+<!--End Of Payment Gateways Passthrough LogAppender Info-->
+
+
+  <!--Begin Of Tatacliq LogAppender Info-->
+   <appender name="MP_TC_Sterling_FetchAWB_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_TC_Sterling_FetchAWB_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_TC_Sterling_FetchAWB_MF_ref"/>
+   </logger>
+   <appender name="MP_TC_Sterling_GetOrderStatusUpdate_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_TC_Sterling_GetOrderStatusUpdate_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_TC_Sterling_GetOrderStatusUpdate_MF_ref"/>
+   </logger>
+   <appender name="MP_TC_Sterling_InventoryFeed_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_TC_Sterling_InventoryFeed_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_TC_Sterling_InventoryFeed_MF_ref"/>
+   </logger>
+   <appender name="MP_TC_Sterling_OrderCreate_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_TC_Sterling_OrderCreate_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_TC_Sterling_OrderCreate_MF_ref"/>
+   </logger>
+   <appender name="MP_TC_Sterling_SellerCancelUpdate_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_TC_Sterling_SellerCancelUpdate_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_TC_Sterling_SellerCancelUpdate_MF_ref"/>
+   </logger>
+   <appender name="MP_TC_Sterling_UpdateInvoice_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_TC_Sterling_UpdateInvoice_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_TC_Sterling_UpdateInvoice_MF_ref"/>
+   </logger>
+   <appender name="MP_TC_Sterling_ManifestUpdate_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_TC_Sterling_ManifestUpdate_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_TC_Sterling_ManifestUpdate_MF_ref"/>
+   </logger>
+	<appender name="MP_TC_Sterling_InventoryFeedAPI_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_TC_Sterling_InventoryFeedAPI_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_TC_Sterling_InventoryFeedAPI_MF_ref"/>
+   </logger>
+
+<!--End Of Tatacliq LogAppender Info-->
+<!--Begin Of Delhivery LogAppender Info-->
+   
+<appender name="Sterling_Delhivery_CarrierAWBGeneration_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_Delhivery_CarrierAWBGeneration_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_Delhivery_CarrierAWBGeneration_MF_ref"/>
+   </logger>
+   
+   <appender name="Sterling_Delhivery_CreatePackage_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+     <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_Delhivery_CreatePackage_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_Delhivery_CreatePackage_MF_ref"/>
+   </logger>
+   
+       <appender name="Sterling_Delhivery_CreatePickUp_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_Delhivery_CreatePickUp_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_Delhivery_CreatePickUp_MF_ref"/>
+   </logger>
+   
+   <appender name="Sterling_Delhivery_PincodeServiceability_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_Delhivery_PincodeServiceability_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_Delhivery_PincodeServiceability_MF_ref"/>
+   </logger>
+   
+   <appender name="Sterling_Delhivery_TrackShipment_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_Delhivery_TrackShipment_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_Delhivery_TrackShipment_MF_ref"/>
+   </logger>
+   
+<!--End Of Delhivery LogAppender Info-->
+
+
+
+<!-- For Unknown  logger Appenders --> 
+<appender name="No_loggerAppender_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+<logger name="No_loggerAppender" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="No_loggerAppender_ref"/>
+</logger>
+
+<!-- End of For Unknown  logger Appenders -->   
+
+<!--Begin Of BlueDart LogAppender Info-->
+   <appender name="Sterling_BD_GenerateWayBill_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_BD_GenerateWayBill_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_BD_GenerateWayBill_MF_ref"/>
+   </logger>
+
+   <appender name="Sterling_BD_GetServicesforPincode_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_BD_GetServicesforPincode_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_BD_GetServicesforPincode_MF_ref"/>
+   </logger>
+   
+   <appender name="BD_Sterling_TrackingShipment_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="BD_Sterling_TrackingShipment_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="BD_Sterling_TrackingShipment_MF_ref"/>
+   </logger>
+<!--End Of BlueDart LogAppender Info-->
+
+<!--Begin Of EcomExpress LogAppender Info-->
+   <appender name="Logistics_Sterling_ECOM_ForwardManifest_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Logistics_Sterling_ECOM_ForwardManifest_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Logistics_Sterling_ECOM_ForwardManifest_MF_ref"/>
+   </logger> 
+   
+   <appender name="Logistics_Sterling_ECOM_ReverseManifest_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Logistics_Sterling_ECOM_ReverseManifest_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Logistics_Sterling_ECOM_ReverseManifest_MF_ref"/>
+   </logger> 
+
+   <appender name="Logistics_ECOM_Sterling_StatusUpdate_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Logistics_ECOM_Sterling_StatusUpdate_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Logistics_ECOM_Sterling_StatusUpdate_MF_ref"/>
+   </logger>
+
+   <appender name="Logistics_Sterling_ECOM_FetchAWB_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Logistics_Sterling_ECOM_FetchAWB_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Logistics_Sterling_ECOM_FetchAWB_MF_ref"/>
+   </logger>
+
+   <appender name="Logistics_Sterling_ECOM_PincodeServiceable_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Logistics_Sterling_ECOM_PincodeServiceable_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Logistics_Sterling_ECOM_PincodeServiceable_MF_ref"/>
+   </logger>
+<!--End Of EcomExpress LogAppender Info-->  
+
+<!--Begin Of Myntra LogAppender Info-->
+
+   <appender name="MP_Sterling_Myn_Inventory_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_Myn_Inventory_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_Myn_Inventory_MF_ref"/>
+   </logger>
+
+<appender name="MP_Sterling_Myn_DispatchOrders_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_Myn_DispatchOrders_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_Myn_DispatchOrders_MF_ref"/>
+   </logger>
+  
+       <appender name="MP_Myn_Sterling_Notification_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Myn_Sterling_Notification_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Myn_Sterling_Notification_MF_ref"/>
+   </logger>
+   
+   <appender name="MP_Sterling_Myn_VerifyShipments_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_Myn_VerifyShipments_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_Myn_VerifyShipments_MF_ref"/>
+   </logger>
+   
+   <appender name="MP_Sterling_Myn_GetShippingLabel_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_Myn_GetShippingLabel_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_Myn_GetShippingLabel_MF_ref"/>
+   </logger>
+   
+   <appender name="MP_Sterling_Myn_PostBulkListing_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_Myn_PostBulkListing_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_Myn_PostBulkListing_MF_ref"/>
+   </logger>
+   
+   <appender name="MP_Sterling_Myn_TaxUpdate_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_Myn_TaxUpdate_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_Myn_TaxUpdate_MF_ref"/>
+   </logger>
+
+   <appender name="MP_Sterling_Myn_PostCancelOrders_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_Myn_PostCancelOrders_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_Myn_PostCancelOrders_MF_ref"/>
+   </logger>
+   
+    <appender name="MP_Sterling_Myn_GetManifest_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="MP_Sterling_Myn_GetManifest_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="MP_Sterling_Myn_GetManifest_MF_ref"/>
+   </logger> 
+
+   <!--End Of Myntra LogAppender Info--> 
+
+   <!-- Begin Of Sequel LogAppender Info-->           
+		
+<appender name="Logistics_Sterling_Sequel_Tracking_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Logistics_Sterling_Sequel_Tracking_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Logistics_Sterling_Sequel_Tracking_MF_ref"/>
+   </logger>
+   
+<appender name="Logistics_Sterling_Sequel_CreateShipment_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Logistics_Sterling_Sequel_CreateShipment_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Logistics_Sterling_Sequel_CreateShipment_MF_ref"/>
+   </logger>  
+   
+<appender name="Logistics_Sterling_Sequel_CheckServiceability_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Logistics_Sterling_Sequel_CheckServiceability_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Logistics_Sterling_Sequel_CheckServiceability_MF_ref"/>
+   </logger>  
+   
+   
+<appender name="Logistics_Sterling_Sequel_ReverseManifest_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Logistics_Sterling_Sequel_ReverseManifest_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Logistics_Sterling_Sequel_ReverseManifest_MF_ref"/>
+   </logger>    
+<!-- End Of Sequel LogAppender Info-->
+
+<!-- Begin Of Qwikcilver LogAppender Info-->    
+                <appender name="Titan_WMS_QwikCilver_Activate_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Titan_WMS_QwikCilver_Activate_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_WMS_QwikCilver_Activate_MF_ref"/>
+   </logger>
+
+         <appender name="Titan_WMS_QwikCilver_Initialize_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Titan_WMS_QwikCilver_Initialize_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_WMS_QwikCilver_Initialize_MF_ref"/>
+   </logger>
+
+         <appender name="Titan_WMS_QwikCilver_Reload_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Titan_WMS_QwikCilver_Reload_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_WMS_QwikCilver_Reload_MF_ref"/>
+   </logger>
+
+   
+ <appender name="Titan_WMS_QwikCilver_Deactivate_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Titan_WMS_QwikCilver_Deactivate_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_WMS_QwikCilver_Deactivate_MF_ref"/>
+   </logger> 
+
+<!-- End Of Qwikcilver LogAppender Info-->
+
+
+
+<!-- Begin Of WCS LogAppender Info--> 
+
+<appender name="Titan_SAP_WCS_WTPriceFeed_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Titan_SAP_WCS_WTPriceFeed_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_SAP_WCS_WTPriceFeed_MF_ref"/>
+   </logger> 
+   
+<appender name="Titan_SAP_WCS_WTProductFeed_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Titan_SAP_WCS_WTProductFeed_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_SAP_WCS_WTProductFeed_MF_ref"/>
+   </logger>
+   
+   <appender name="Titan_IIB_WCS_CurrXchngRate_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Titan_IIB_WCS_CurrXchngRate_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_IIB_WCS_CurrXchngRate_MF_ref"/>
+   </logger>
+   
+   <appender name="Titan_SAP_WCS_WTEnrichment_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Titan_SAP_WCS_WTEnrichment_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_SAP_WCS_WTEnrichment_MF_ref"/>
+   </logger>
+   
+   <appender name="Titan_IIB_WCS_WTEnrichOffer_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Titan_IIB_WCS_WTEnrichOffer_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_IIB_WCS_WTEnrichOffer_MF_ref"/> 
+   </logger> 
+   
+   <appender name="Titan_IIB_WCS_WTEnrichMerchandiser_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Titan_IIB_WCS_WTEnrichMerchandiser_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_IIB_WCS_WTEnrichMerchandiser_MF_ref"/> 
+   </logger>
+   
+  
+   
+  
+   <!-- End Of WCS LogAppender Info-->
+   
+   <!--Begin Of PayU LogAppender Info-->
+<appender name="Payment_Sterling_PayU_CancelRefundTransaction_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+</appender>
+<logger name="Payment_Sterling_PayU_CancelRefundTransaction_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Payment_Sterling_PayU_CancelRefundTransaction_MF_ref"/>
+</logger>
+
+<appender name="PayUBiz_PassThrough_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+</appender>
+<logger name="PayUBiz_PassThrough" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="PayUBiz_PassThrough_ref"/>
+</logger>
+
+
+<!--End Of PayU LogAppender Info-->
+
+
+
+
+<!--Begin Of Passthrough LogAppender Info-->
+<appender name="Delhivery_Passthrough_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Delhivery_Passthrough" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Delhivery_Passthrough_ref"/>
+   </logger>
+
+<appender name="IMC_OAuthGeneration_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="IMC_OAuthGeneration" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="IMC_OAuthGeneration_ref"/>
+   </logger>
+<!--End Of Passthrough LogAppender Info-->
+
+    
+   <appender name="OMS_Encircle_ReversalPoints_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   
+   <logger name="OMS_Encircle_ReversalPoints_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="OMS_Encircle_ReversalPoints_MF_ref"/>
+   </logger>
+   
+   <appender name="EncircleReversalPoints_PassThrough_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   
+   <logger name="EncircleReversalPoints_PassThrough" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="EncircleReversalPoints_PassThrough_ref"/>
+   </logger>
+   
+  
+
+<!-- End Of Sequel LogAppender Info-->
+
+
+<!--Begin Of WCS Jewellery ItemMaster LogAppender Info-->
+   <appender name="Titan_OMNIPOSS_WCS_JWItemMaster_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Titan_OMNIPOSS_WCS_JWItemMaster_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_OMNIPOSS_WCS_JWItemMaster_MF_ref"/>
+   </logger>
+<!--End Of WCS Jewellery ItemMaster LogAppender Info-->   
+
+<!--Begin Of WCS Jewellery ItemDetail LogAppender Info-->
+  <appender name="Titan_OMNIPOSS_WCS_JWItemDetail_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   
+   <logger name="Titan_OMNIPOSS_WCS_JWItemDetail_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_OMNIPOSS_WCS_JWItemDetail_MF_ref"/>
+   </logger> 
+<!--End Of WCS Jewellery ItemDetail LogAppender Info-->
+ 
+<!--Begin Of WCS Jewellery Inventory LogAppender Info-->
+   <appender name="Titan_OMNIPOSS_WCS_JWInventory_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   
+   <logger name="Titan_OMNIPOSS_WCS_JWInventory_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_OMNIPOSS_WCS_JWInventory_MF_ref"/>
+   </logger>  
+<!--End Of WCS Jewellery Inventory LogAppender Info-->
+
+<!--Begin Of WCS Jewellery Enrichment LogAppender Info-->
+<appender name="Titan_IIB_WCS_JWEnrichMerchandiser_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   
+   <logger name="Titan_IIB_WCS_JWEnrichMerchandiser_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Titan_IIB_WCS_JWEnrichMerchandiser_MF_ref"/>
+   </logger>
+<!--End Of WCS Jewellery Enrichment LogAppender Info-->
+
+<!--Begin Of UPS LogAppender Info-->
+
+<appender name="Sterling_UPS_TrackRequest_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_UPS_TrackRequest_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_UPS_TrackRequest_MF_ref"/>
+   </logger>
+
+<appender name="Sterling_UPS_PickupCreationRequest_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_UPS_PickupCreationRequest_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_UPS_PickupCreationRequest_MF_ref"/>
+   </logger>
+<appender name="Sterling_UPS_PublishedRatesShipmentRequest_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_UPS_PublishedRatesShipmentRequest_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_UPS_PublishedRatesShipmentRequest_MF_ref"/>
+   </logger>
+   
+   
+   <appender name="Sterling_UPS_ShippingChargesQueryRequest_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_UPS_ShippingChargesQueryRequest_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_UPS_ShippingChargesQueryRequest_MF_ref"/>
+   </logger>
+   
+ 
+<appender name="Sterling_UPS_EstimateRequest_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+   <logger name="Sterling_UPS_EstimateRequest_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="Sterling_UPS_EstimateRequest_MF_ref"/>
+   </logger>
+    
+<!--End Of UPS LogAppender Info-->
+
+<!--Begin Of Encircle PointsAccural LogAppender Info-->
+ <appender name="OMS_Encircle_PointsAccural_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+
+   <logger name="OMS_Encircle_PointsAccural_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="OMS_Encircle_PointsAccural_MF_ref"/>
+   </logger>
+<!--End Of Encircle PointsAccural LogAppender Info-->
+
+<!--Begin Of WMS WeightCapture LogAppender Info-->
+ <appender name="WCS_WMS_WeightCapture_MF_ref" class="org.apache.log4j.RollingFileAppender">
+      <param name="append" value="true"/>
+      <param name="maxFileSize" value="50MB"/>
+      <param name="maxBackupIndex" value="100"/>
+      <param name="immediateFlush" value="true"/>
+      <param name="file" value="/app/iib/logs/eCommerce_IIB.log"/>
+      <layout class="org.apache.log4j.PatternLayout">
+         <param name="ConversionPattern" value=" %d{dd MMM yyyy HH:mm:ss:SSS}  %-5p [%-10t] %-1m%n"/>
+      </layout>
+   </appender>
+
+   <logger name="WCS_WMS_WeightCapture_MF" additivity="true">
+      <level value="INFO"/>
+      <appender-ref ref="WCS_WMS_WeightCapture_MF_ref"/>
+   </logger>
+<!--End Of WMS WeightCapture LogAppender Info-->
+
+
+</log4j:configuration>
